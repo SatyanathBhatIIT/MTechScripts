@@ -58,7 +58,8 @@ def getDecision(coap, clarityList, rejectList):
 #modeOfRun = 'CSE'  # EE or CE or ME possible
 #modeOfRun = 'CSE'
 #modeOfRun = 'EE'
-modeOfRun = 'EC'
+#modeOfRun = 'EC'
+modeOfRun = 'MST'
 #create file names appropriately
 rawData = ''
 filteredData = ''
@@ -119,6 +120,13 @@ elif modeOfRun == 'ME':
     coapData ='/home/satyanath/work/MTech2025/MtechFirstRoundScript/MTech2025/COAPData_ME.xlsx'
     programCode = ['ME']
     sheetName = 'ME.xls'
+elif modeOfRun == 'MST':
+    rawData ='/home/satyanath/data/MTech2025/MST.xlsx'
+    filteredData ='/home/satyanath/data/MTech2025/MasterData_MST.xlsx'
+    originalData ='/home/satyanath/data/MTech2025/MasterData_MST_original.xlsx'
+    coapData ='/home/satyanath/data/MTech2025/COAPData_MST.xlsx'
+    programCode = ['EE','ME','EC','IN','NM','CE','CS','AE']
+    sheetName = 'MST.xls'
 
 
 #DONE
